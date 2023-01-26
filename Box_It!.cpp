@@ -49,10 +49,10 @@ class Box{
         return h;
     }
     long long CalculateVolume(){
-        return l*b*h;
+        return (long long(l*b*h));
     }
     friend bool operator < (Box& b1, Box& b2){
-        if((b1.l < b2.l) || (b1.l == b2.l && b2.l < b2.b) || (b1.l == b2.l && b1.b == b2.b && b1.h < b2.h)){
+        if((b1.l < b2.l) || (b1.l == b2.l && b2.b < b2.b) || (b1.l == b2.l && b1.b == b2.b && b1.h < b2.h)){
             return(true);
         }
         else{
